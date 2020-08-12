@@ -8,7 +8,7 @@ then((response)=>(response.json()).then((data)=>{
     if(data.error)
    showError(data.error);
     else
-    {console.log(data);
+    {
    showWeather(data);}
 
 }));
