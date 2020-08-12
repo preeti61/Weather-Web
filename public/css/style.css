@@ -1,0 +1,13 @@
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding:0 16;
+}
+footer
+{background-color: cornflowerblue;
+padding: 16px;
+margin:16px;
+border-top: 3px solid #eeee90;
+}
