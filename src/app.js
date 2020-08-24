@@ -2,6 +2,7 @@ const path=require('path')
 const express=require('express')
 const hbs=require('hbs')
 const app=express()
+const port=process.env.PORT||3000
 const getWeather=require('./weather.js')
 const getLocation=require('./location.js')
 const viewsPath=path.join(__dirname,'../templates/views')//customizing views directory
@@ -49,6 +50,6 @@ app.get('/*',(req,res)=>{
     res.render('404',{msg:"404 Page not Found"})
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server up at port 3000')
 })
